@@ -1,0 +1,54 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    overflow: hidden;
+    background: url(background.webp) no-repeat center center fixed;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#content {
+    position: relative;
+    z-index: 1;
+}
+
+#score {
+    font-weight: 750;
+    font-size: 50px;
+    padding: 10px;
+    color: black;
+}
+
+#startButton {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+}
+
+audio {
+    display: none;
+}
+
+#gameCanvas {
+    border: 3.5px solid black;
+}
+
+@media (max-width: 768px) {
+    #gameCanvas {
+        height: 300px;
+        width: 300px;
+        border: 3.5px solid black;
+    }
+
+    body {
+        background: url(phone-background.jpg) no-repeat center center fixed;
+        background-size: cover;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+}
+
